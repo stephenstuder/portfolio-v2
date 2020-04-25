@@ -9,18 +9,17 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
-    
+
     <label>
-        <input type="checkbox">
+        <input id="checkbox" type="checkbox">
         <span class="menu">
             <span class="hamburger"></span>
         </span>
         <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">PROJECTS</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a class="scrollLink" href="#home">HOME</a></li>
+            <li><a class="scrollLink" href="test.html">ABOUT</a></li>
+            <li><a class="scrollLink" href="#projects">PROJECTS</a></li>
+            <li><a class="scrollLink" href="#contact">CONTACT</a></li>
         </ul>
     </label>
     <div class="swiper-container">
@@ -32,19 +31,19 @@
               </a>  
         </div>
         <div class="swiper-wrapper">
-            <div class="swiper-slide slide1">
+            <div id="home" class="swiper-slide slide1">
                 <h1>Stephen Studer</h1>
                 <p>Front end web developer</p>  
-            </div>
-            <div class="swiper-slide slide2">
                 <section class="about">
                     <h2>About</h2>
                 </section>
+            </div>
+            <div id="projects" class="swiper-slide slide2">
                 <section class="projects">
                     <h2>Projects</h2>
                     <main class="container-fluid d-flex justify-content-around flex-wrap align-items-center m-y-5">
                         <div class="card my-5 bg-dark text-white" style="width: 25rem;">
-                          <img class="card-img-top" height="300" width="250" src="./images/csshamburger.gif" alt="CSS hamburger gif">
+                          <img class="card-img-top" height="300" width="250" src="" alt="CSS hamburger gif">
                           <div class="card-body">
                             <h4>Pure CSS Hamburger Menu
                             </h4>
@@ -58,7 +57,7 @@
                           </div>
                         </div>
                         <div class="card my-5 bg-dark text-white" style="width: 25rem;">
-                          <img class="card-img object-fit-cover" height="300" width="250"  src="./images/bulldog-zoomies.gif" alt="Bulldog Zoomies gif">
+                          <img class="card-img object-fit-cover" height="300" width="250"  src="" alt="Bulldog Zoomies gif">
                           <div class="card-body">
                             <h4>Bulldog Zoomies
                             </h4>
@@ -70,7 +69,7 @@
                           </div>
                         </div>
                         <div class="card my-5 bg-dark text-white" style="width: 25rem;">
-                          <img class="card-img-top" height="300" width="250"  src="./images/password-generator.PNG" alt="Card image cap">
+                          <img class="card-img-top" height="300" width="250"  src="" alt="Card image cap">
                           <div class="card-body">
                             <h4>Secure Password Generator
                             </h4>
@@ -85,6 +84,8 @@
                         </div>
                       </main>
                 </section>
+            </div>
+            <div id="contact" class="swiper-slide slide3">
                 <section class="contact">
                     <h2>Contact</h2>
                 </section>
@@ -96,8 +97,12 @@
     </div>
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.min.js"
+  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+  crossorigin="anonymous"></script>
     <script src="./app.js"></script>
 </body>
 </html>
